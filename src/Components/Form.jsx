@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeadset } from '@fortawesome/free-solid-svg-icons'
+import { faEye, faHeadset } from '@fortawesome/free-solid-svg-icons'
 
 const Form = () => {
   return (
@@ -10,24 +10,41 @@ const Form = () => {
           {/* First Column */}
           <div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 1</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Employee Name</label>
+              <input
+                type="text"
+                placeholder="Bond"
+                className="w-full border rounded px-2 py-1"
+              />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 2</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Joining Date</label>
+              <input type="date" className="w-full border rounded px-2 py-1" />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 3</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Location</label>
+              <input
+                type="text"
+                placeholder="Your mother House"
+                className="w-full border rounded px-2 py-1"
+              />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 4</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Divison</label>
+              <select className="w-full bg-white border rounded px-2 py-1">
+                <option value="">Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
             </div>
-            <div className="mb-4">
-              <label className="block text-gray-700">Label 5</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+            <div className="mb-3">
+              <label className="block text-gray-700">Salary</label>
+              <input
+                type="text"
+                placeholder="7 peacocks"
+                className="w-full border rounded px-2 py-1"
+              />
             </div>
             <button
               type="submit"
@@ -40,24 +57,59 @@ const Form = () => {
           {/* Second Column */}
           <div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 1</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Employee ID</label>
+              <input
+                type="number"
+                placeholder="23343425445"
+                className="w-full border rounded px-2 py-1"
+              />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 2</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Designation</label>
+              <input
+                type="text"
+                placeholder="primary bread"
+                className="w-full border rounded px-2 py-1"
+              />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 3</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Business Unit</label>
+              <input
+                type="text"
+                placeholder="big money"
+                className="w-full border rounded px-2 py-1"
+              />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Label 4</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+              <label className="block text-gray-700">Department</label>
+              <input
+                type="text"
+                placeholder="Daddy Issues"
+                className="w-full border rounded px-2 py-1"
+              />
             </div>
-            <div>
-              <label className="block text-gray-700">Label 5</label>
-              <input type="text" className="w-full border rounded px-2 py-1" />
+            {/* <div>
+              <label className="block text-gray-700">Authorization Code</label>
+              <input type="number" placeholder='Enter Code' className="w-full border rounded px-2 py-1" />
+            </div> */}
+            <div className="relative w-full ">
+              <label className="block text-gray-700 ">
+                Authorization Code
+              </label>
+              <div className="relative ">
+                <input
+                  type="text"
+                  placeholder="Enter Code"
+                  className="w-full border rounded px-3 py-1 text-gray-700 pr-24 pl-4" // Adjust padding for the button
+                />
+                <FontAwesomeIcon
+                  icon={faEye}
+                  className="absolute  inset-y-0 right-16 pr-2 my-auto text-blue-500 cursor-pointer" // Position icon before button
+                />
+                <button className="absolute inset-y-0 right-0 bg-blue-500 text-white text-sm px-4 py-1 rounded-r">
+                  Send
+                </button>
+              </div>
             </div>
           </div>
 
