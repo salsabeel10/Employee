@@ -5,7 +5,7 @@ import { faBell, faCog, faSearch } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
   return (
     <div className="container">
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-center justify-between w-full p-4">
         {/* Input with trailing icons */}
         <div className="flex items-center w-full space-x-2">
           <div className="relative w-[90%]">
@@ -20,20 +20,20 @@ const Header = () => {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded-full">
+            <div className="flex items-center justify-center w-10 h-10 bg-blue-600  hover:bg-blue-500 cursor-pointer text-white rounded-full">
               <FontAwesomeIcon icon={faBell} />
             </div>
-            <div className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded-full">
+            <div className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-500 cursor-pointer text-white rounded-full">
               <FontAwesomeIcon icon={faCog} />
             </div>
           </div>
         </div>
       </div>
       <div className="flex space-x-4 pl-4">
-        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+        <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500">
           Employee Enrollment
         </button>
-        <button className="px-4 py-2 bg-[#e9eefa] text-blue-500 rounded hover:bg-blue-200">
+        <button className="px-4 py-2 bg-blue-100 text-blue-600 rounded hover:bg-blue-200">
           Compute Salary
         </button>
       </div>

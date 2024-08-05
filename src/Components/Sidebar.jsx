@@ -60,11 +60,11 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="mt-auto">
-        <button className="flex items-center bg-first_btn hover:bg-gray-600 text-blue-600 py-2 px-4 mb-4 w-full rounded justify-center">
+        <button className="flex items-center bg-blue-100 hover:bg-blue-200 text-blue-600 py-2 px-4 mb-4 w-full rounded justify-center">
           <FontAwesomeIcon icon={faUser} className="mr-2" />
           Aditya Arun
         </button>
-        <button className="flex items-center bg-blue-600 hover:bg-red-500 text-white py-2 px-4 w-full rounded justify-center">
+        <button className="flex items-center bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 w-full rounded justify-center">
           <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />
           Logout
         </button>
