@@ -15,16 +15,15 @@ import {
 import reactIcon from '../assets/Staff.svg'
 import Logo from '../assets/Logo.svg'
 
-
-
 const Sidebar = () => {
   return (
     <div className="flex flex-col justify-between border-r-2 border-blue-200 h-screen bg-[#f9fcfe] text-black p-4 w-64">
       <div>
         <div className="flex items-center mb-6 ">
-          
-          <span className="text-xl font-semibold text-blue-600">ClearTime® </span>
-          <img src={Logo} alt="logo" className='pl-2' />
+          <span className="text-xl font-semibold text-blue-600">
+            ClearTime®{' '}
+          </span>
+          <img src={Logo} alt="logo" className="pl-2" />
         </div>
 
         <ul className="space-y-4">
@@ -74,6 +73,3 @@ const Sidebar = () => {
 }
 
 export default Sidebar
-
-
-

@@ -7,14 +7,11 @@ const App = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <div className='w-full'>
-
-      <Header />
-      <Form />
+      <div className="w-full">
+        <Header />
+        <Form />
       </div>
-      </div>
-      
-    
+    </div>
   )
 }
 

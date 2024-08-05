@@ -88,10 +88,6 @@ const Form = () => {
                 className="w-full border rounded px-2 py-1"
               />
             </div>
-            {/* <div>
-              <label className="block text-gray-700">Authorization Code</label>
-              <input type="number" placeholder='Enter Code' className="w-full border rounded px-2 py-1" />
-            </div> */}
             <div className="relative w-full ">
               <label className="block text-gray-700 ">
                 Authorization Code
@@ -116,22 +112,16 @@ const Form = () => {
           {/* Third Column */}
           <div className="flex flex-col items-center">
             <label className="block text-gray-700 mb-2">Employee Name</label>
-            <div className="w-24 h-24 mb-4 bg-gray-300 rounded-full flex items-center justify-center">
+            <div className="w-[10rem] h-[10rem] mb-4 bg-gray-300 rounded-full flex items-center justify-center">
               {/* Placeholder for profile image */}
               <span>Profile</span>
             </div>
-            <button className="border border-blue-300 text-blue-300 hover:bg-blue-100 px-4 py-2 rounded transition">
+            <button className="border text-gray-700 hover:bg-blue-100 px-4 py-2 rounded transition">
               Upload Picture
             </button>
           </div>
         </div>
       </form>
-      {/* Footer */}
-      {/* <div className="relative h-20 mt-1">
-        <div className="absolute bottom-4 right-4 bg-blue-500 text-white p-4 rounded-full">
-          <FontAwesomeIcon icon={faHeadset}/>
-        </div>
-      </div> */}
     </div>
   )
 }
