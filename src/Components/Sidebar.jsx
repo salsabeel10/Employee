@@ -13,17 +13,20 @@ import {
   faUsers,
 } from '@fortawesome/free-solid-svg-icons'
 import reactIcon from '../assets/Staff.svg'
+import Logo from '../assets/Logo.svg'
 
 
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col justify-between h-screen bg-white text-black p-4 w-64">
+    <div className="flex flex-col justify-between border-r-2 border-blue-200 h-screen bg-[#f9fcfe] text-black p-4 w-64">
       <div>
-        <div className="flex items-center mb-6">
-          <FontAwesomeIcon icon={faFolder} className="text-blue-400 mr-2" />
-          <span className="text-xl font-semibold">ClearTime</span>
+        <div className="flex items-center mb-6 ">
+          
+          <span className="text-xl font-semibold text-blue-600">ClearTime® </span>
+          <img src={Logo} alt="logo" className='pl-2' />
         </div>
+
         <ul className="space-y-4">
           <li className="flex items-center">
             <FontAwesomeIcon icon={faUsers} className="mr-2" />
@@ -51,8 +54,7 @@ const Sidebar = () => {
             Document Control
           </li>
           <li className="flex items-center">
-            <img src={reactIcon} alt="dollor" className='mr-2 ' width={23} height={23}  />
-            {/* <FontAwesomeIcon icon={faDollarSign} className="mr-2" /> */}
+            <FontAwesomeIcon icon={faDollarSign} className="mr-2" />
             Finances
           </li>
         </ul>
