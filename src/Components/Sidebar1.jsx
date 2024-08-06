@@ -17,6 +17,22 @@ import Logo from '../assets/Logo.svg'
 
 const Sidebar1 = () => {
   const [isOpen, setIsOpen] = useState(false)
+  
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setSelectedIndex(index);
+  };
+
+  const menuItems = [
+    { icon: faUsers, label: 'Employees' },
+    { icon: faClock, label: 'TimeSheet Entry' },
+    { icon: faFileInvoice, label: 'Invoice' },
+    { icon: faProjectDiagram, label: 'Project Initiation' },
+    { icon: faCalendarAlt, label: 'Resource Planner' },
+    { icon: faFileAlt, label: 'Document Control' },
+    { icon: faDollarSign, label: 'Finances' },
+  ];
 
   return (
     <div className="relative ">
@@ -43,34 +59,20 @@ const Sidebar1 = () => {
           </div>
 
           <ul className="space-y-4">
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faUsers} className="mr-2" />
-              Employees
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faClock} className="mr-2" />
-              TimeSheet Entry
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faFileInvoice} className="mr-2" />
-              Invoice
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faProjectDiagram} className="mr-2" />
-              Project Initiation
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
-              Resource Planner
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
-              Document Control
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faDollarSign} className="mr-2" />
-              Finances
-            </li>
+            {menuItems.map((item, index) => (
+              <li
+                key={index}
+                className={`flex items-center p-2 cursor-pointer ${
+                  selectedIndex === index
+                    ? 'bg-blue-400 border-l-4 border-blue-700 text-white'
+                    : 'hover:bg-gray-100'
+                }`}
+                onClick={() => handleClick(index)}
+              >
+                <FontAwesomeIcon icon={item.icon} className="mr-2" />
+                {item.label}
+              </li>
+            ))}
           </ul>
         </div>
         <div>
@@ -95,5 +97,6 @@ const Sidebar1 = () => {
     </div>
   )
 }
+
 
 export default Sidebar1

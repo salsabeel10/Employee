@@ -1,10 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign, faEye, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 const Form1 = () => {
   return (
-    <div className="px-4 mt-5 w-full md:w-[90%]">
+    <div className="px-4 mt-1 w-full md:w-[90%]">
       <form className="p-3 border-2 border-blue-300">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {/* Third Column - Employee Profile */}
@@ -15,7 +15,7 @@ const Form1 = () => {
               <span>Profile</span>
             </div>
             <button className="border text-gray-700 hover:bg-blue-100 px-4 py-2 rounded transition w-full md:w-auto">
-              Upload Picture
+              Upload Picture (300 X 250px)
             </button>
           </div>
 
@@ -34,29 +34,49 @@ const Form1 = () => {
               <input type="date" className="w-full border rounded px-2 py-1" />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Location</label>
-              <input
-                type="text"
-                placeholder="Your mother House"
-                className="w-full border rounded px-2 py-1"
-              />
+              <label className="block text-gray-700 ">Location</label>
+              <div className="relative w-full">
+                <input
+                  type="text"
+                  placeholder="Your mother House"
+                  className="w-full border rounded px-2 py-1 pr-10"
+                />
+                <FontAwesomeIcon
+                  icon={faLocationDot}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black"
+                />
+              </div>
             </div>
             <div className="mb-4">
               <label className="block text-gray-700">Division</label>
-              <select className="w-full bg-white border rounded px-2 py-1">
+              <select className="w-full bg-white border rounded px-1 py-2">
                 <option value="">Select an option</option>
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
                 <option value="option3">Option 3</option>
               </select>
             </div>
-            <div className="mb-3">
+            {/* <div className="mb-3">
               <label className="block text-gray-700">Salary</label>
               <input
                 type="text"
                 placeholder="7 peacocks"
                 className="w-full border rounded px-2 py-1"
               />
+            </div> */}
+            <div className="mb-4">
+              <label className="block text-gray-700 ">Salary</label>
+              <div className="relative w-full">
+                <input
+                  type="text"
+                  placeholder="$99999"
+                  className="w-full border rounded px-2 py-1 pr-10"
+                />
+                <FontAwesomeIcon
+                  icon={faDollarSign}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black"
+                />
+              </div>
             </div>
             <button
               type="submit"
@@ -86,19 +106,21 @@ const Form1 = () => {
             </div>
             <div className="mb-4">
               <label className="block text-gray-700">Business Unit</label>
-              <input
-                type="text"
-                placeholder="big money"
-                className="w-full border rounded px-2 py-1"
-              />
+              <select className="w-full bg-white border rounded px-2 py-2">
+                <option value="">Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
             </div>
             <div className="mb-4">
               <label className="block text-gray-700">Department</label>
-              <input
-                type="text"
-                placeholder="Daddy Issues"
-                className="w-full border rounded px-2 py-1"
-              />
+              <select className="w-full bg-white border rounded px-1 py-2">
+                <option value="">Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
             </div>
             <div className="relative w-full">
               <label className="block text-gray-700">Authorization Code</label>
