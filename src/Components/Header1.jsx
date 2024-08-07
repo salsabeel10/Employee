@@ -1,10 +1,19 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faCog, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate,useLocation } from 'react-router-dom'
 
 const Header1 = () => {
+  const navigate =useNavigate();
+  const location = useLocation();
+  function GotoEmployee() {
+    navigate('/')
+  }
+  function GotoCompute(){
+    navigate('/computeSalary')
+  }
   return (
-    <div className="container mt-1 md:mt-0">
+    <div className="container mt-1 md:mt-0 pl-2">
       <div className="flex flex-col md:flex-row items-center justify-between w-full p-4">
         {/* Input with trailing icons */}
         <div className="flex items-center w-full space-x-2 mb-4 md:mb-0">
@@ -30,10 +39,24 @@ const Header1 = () => {
         </div>
       </div>
       <div className="flex flex-col py-2 px-6 md:flex-row space-y-2 md:space-y-0 md:space-x-4 pl-4">
-        <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-base bg-blue-600 text-white rounded hover:bg-blue-500">
+        <button
+          onClick={GotoEmployee}
+          className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
+            location.pathname === '/'
+              ? 'bg-blue-600 text-white  hover:bg-blue-500'
+              : 'bg-[#e9eefa] text-blue-600 hover:bg-[#e9eefa]/70'
+          }`}
+        >
           Employee Enrollment
         </button>
-        <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-base bg-blue-100 text-blue-600 rounded hover:bg-blue-200">
+        <button
+          onClick={GotoCompute}
+          className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
+            location.pathname === '/computeSalary'
+              ? 'bg-[#6f74f6] text-white  hover:bg-[#6f74f6]/80'
+              : 'bg-[#e9eefa] text-blue-600 hover:bg-[#e9eefa]/70'
+          }`}
+        >
           Compute Salary
         </button>
       </div>

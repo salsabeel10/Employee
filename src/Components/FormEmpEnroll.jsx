@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDollarSign, faEye, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
-const Form1 = () => {
+const FormEmpEnroll = () => {
   return (
     <div className="px-4 mt-1 w-full md:w-[90%]">
       <form className="p-3 border-2 border-blue-300">
@@ -56,14 +56,6 @@ const Form1 = () => {
                 <option value="option3">Option 3</option>
               </select>
             </div>
-            {/* <div className="mb-3">
-              <label className="block text-gray-700">Salary</label>
-              <input
-                type="text"
-                placeholder="7 peacocks"
-                className="w-full border rounded px-2 py-1"
-              />
-            </div> */}
             <div className="mb-4">
               <label className="block text-gray-700 ">Salary</label>
               <div className="relative w-full">
@@ -146,4 +138,4 @@ const Form1 = () => {
   )
 }
 
-export default Form1
+export default FormEmpEnroll
