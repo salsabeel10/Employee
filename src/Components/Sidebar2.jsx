@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUser,
@@ -12,30 +12,55 @@ import {
   faUsers,
   faBars,
 } from '@fortawesome/free-solid-svg-icons'
-import reactIcon from '../assets/Staff.svg'
+
 import Logo from '../assets/Logo.svg'
-import { useLocation } from 'react-router-dom'
+import { useLocation,useNavigate } from 'react-router-dom'
 
-const Sidebar1 = () => {
-  const location =useLocation()
+const menuItems = [
+  { icon: faUsers, label: 'Employees', path: '/employee' },
+  { icon: faClock, label: 'TimeSheet Entry', path: '/timeSheetEntry' },
+  { icon: faFileInvoice, label: 'Invoice', path: '/invoice' },
+  {
+    icon: faProjectDiagram,
+    label: 'Project Initiation',
+    path: '/projectInitiation',
+  },
+  {
+    icon: faCalendarAlt,
+    label: 'Resource Planner',
+    path: '/resourcePlanner',
+  },
+  { icon: faFileAlt, label: 'Document Control', path: '/documentControl' },
+  { icon: faDollarSign, label: 'Finances', path: '/finances' },
+]
+
+
+const Sidebar2 = () => {
+  const location = useLocation()
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false)
+
+  const [selectedIndex, setSelectedIndex] = useState(null)
+
+   useEffect(() => {
+     const currentPath = location.pathname
+     const currentIndex = menuItems.findIndex((item) =>
+       currentPath.startsWith(item.path)
+     )
+     if (currentIndex !== -1) {
+       setSelectedIndex(currentIndex)
+     }
+   }, [location.pathname])
+
+   const handleClick = (index) => {
+     setSelectedIndex(index)
+     navigate(menuItems[index].path);
+     
+   }
+
   
-  const [selectedIndex, setSelectedIndex] = useState(null);
 
-  const handleClick = (index) => {
-    setSelectedIndex(index);
-  };
-
-  const menuItems = [
-    { icon: faUsers, label: 'Employees' },
-    { icon: faClock, label: 'TimeSheet Entry' },
-    { icon: faFileInvoice, label: 'Invoice' },
-    { icon: faProjectDiagram, label: 'Project Initiation' },
-    { icon: faCalendarAlt, label: 'Resource Planner' },
-    { icon: faFileAlt, label: 'Document Control' },
-    { icon: faDollarSign, label: 'Finances' },
-  ];
-
+  
   return (
     <div className="relative ">
       {/* Menu icon for mobile */}
@@ -47,13 +72,14 @@ const Sidebar1 = () => {
       </button>
 
       {/* Sidebar */}
+      
       <div
         className={`${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } fixed md:relative pt-6 top-0 left-0 h-full w-64 bg-[#f9fcfe] text-black p-4 border-r-2 border-blue-200 transition-transform duration-300 ease-in-out z-40 md:translate-x-0 flex flex-col justify-between`}
+        } fixed md:relative pt-5 pb-2 top-0 left-0 h-full w-64 bg-[#f9fcfe] text-black p-4 border-r-2 border-blue-200 transition-transform duration-300 ease-in-out z-40 md:translate-x-0 flex flex-col justify-between`}
       >
         <div className="flex-1 flex-col h-screen">
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-7 pl-1">
             <span className="text-xl font-semibold text-blue-600">
               ClearTime®
             </span>
@@ -100,5 +126,4 @@ const Sidebar1 = () => {
   )
 }
 
-
-export default Sidebar1
+export default Sidebar2
