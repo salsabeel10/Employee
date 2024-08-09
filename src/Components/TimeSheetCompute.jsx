@@ -46,12 +46,15 @@ const TimeSheetCompute = () => {
     ],
   ]
   return (
-    <div className="overflow-x-auto mb-5  ">
-      <table className="table-auto border-collapse border border-gray-300">
+    <div className="overflow-x-auto mb-5">
+      <table className="table-auto border-collapse border border-gray-300 w-full">
         <thead>
           <tr className="bg-[#6f74f6] text-white">
             {columns.map((column, index) => (
-              <th key={index} className="border border-gray-300 p-3">
+              <th
+                key={index}
+                className="border border-gray-300 p-2 text-xs md:p-3 md:text-base"
+              >
                 {column}
               </th>
             ))}
@@ -61,7 +64,10 @@ const TimeSheetCompute = () => {
           {rows.map((row, rowIndex) => (
             <tr key={rowIndex} className="bg-[#F9FCFE] hover:bg-gray-100">
               {row.map((cell, colIndex) => (
-                <td key={colIndex} className="border border-gray-300 p-3">
+                <td
+                  key={colIndex}
+                  className="border border-gray-300 p-1 text-xs md:p-3 md:text-base"
+                >
                   {cell}
                 </td>
               ))}

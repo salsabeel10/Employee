@@ -7,17 +7,32 @@ import TimeSheetCompute from '../Components/TimeSheetCompute'
 const ComputeSalary = () => {
     
   return (
+    // <div className="flex flex-col md:flex-row min-h-screen">
+    //   {/* Sidebar - Hidden on small screens, visible on medium screens and above */}
+    //   <Sidebar1 className="md:w-64" />
+    //   <div className="flex-1 flex flex-col">
+    //     {/* Header takes full width */}
+    //     <Header1 className="p-4" />
+    //     {/* Form takes remaining space */}
+    //     <main className="flex  md:p-4 ">
+    //       <FormComputeSalary />
+    //     </main>
+    //     <div className='w-full md:pl-11 px-6'>
+    //       <TimeSheetCompute />
+    //     </div>
+    //   </div>
+    // </div>
     <div className="flex flex-col md:flex-row min-h-screen">
       {/* Sidebar - Hidden on small screens, visible on medium screens and above */}
-      <Sidebar1 className="md:w-64" />
+      <Sidebar1 className="md:w-64 hidden md:block" />
       <div className="flex-1 flex flex-col">
         {/* Header takes full width */}
         <Header1 className="p-4" />
         {/* Form takes remaining space */}
-        <main className="flex  md:p-4 ">
+        <main className="flex-1 p-4">
           <FormComputeSalary />
         </main>
-        <div className='w-full md:pl-11 px-6'>
+        <div className="w-full h-full px-6 md:px-11">
           <TimeSheetCompute />
         </div>
       </div>

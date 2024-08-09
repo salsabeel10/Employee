@@ -13,11 +13,11 @@ const Header1 = () => {
     navigate('/computeSalary')
   }
   return (
-    <div className="container mt-1 md:mt-0 pl-2">
-      <div className="flex flex-col md:flex-row items-center justify-between w-full p-4">
+    <div className="container mt-1 w-full md:mt-0 pl-2">
+      <div className="flex flex-col  md:flex-row items-center justify-between w-full p-4">
         {/* Input with trailing icons */}
         <div className="flex items-center w-full space-x-2 mb-4 md:mb-0">
-          <div className="relative w-full md:w-[90%]">
+          <div className="relative w-full md:w-[100%]">
             <input
               type="text"
               placeholder="Search for items..."
@@ -43,7 +43,7 @@ const Header1 = () => {
           onClick={GotoEmployee}
           className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
             location.pathname === '/'
-              ? 'bg-blue-600 text-white  hover:bg-blue-500'
+              ? 'bg-[#6f74f6] text-white  hover:bg-[#6f74f6]/80'
               : 'bg-[#e9eefa] text-blue-600 hover:bg-[#e9eefa]/70'
           }`}
         >

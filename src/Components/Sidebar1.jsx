@@ -80,7 +80,7 @@ const Sidebar1 = () => {
             <FontAwesomeIcon icon={faUser} className="mr-2" />
             Aditya Arun
           </button>
-          <button className="flex items-center bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 w-full rounded justify-center">
+          <button className="flex items-center bg-[#6f74f6] hover:bg-[#6f74f6]/80 text-white py-2 px-4 w-full rounded justify-center">
             <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />
             Logout
           </button>

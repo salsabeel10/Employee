@@ -72,7 +72,7 @@ const FormEmpEnroll = () => {
             </div>
             <button
               type="submit"
-              className="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 w-full md:w-auto"
+              className="mt-2 bg-[#6f74f6]  text-white px-4 py-2 rounded hover:bg-[#6f74f6]/80 w-full md:w-auto"
             >
               Save Employee
             </button>
@@ -126,7 +126,7 @@ const FormEmpEnroll = () => {
                   icon={faEye}
                   className="absolute inset-y-0 right-16 pr-2 my-auto text-blue-500 cursor-pointer" // Position icon before button
                 />
-                <button className="absolute inset-y-0 right-0 bg-blue-500 text-white text-sm px-4 py-1 rounded-r">
+                <button className="absolute inset-y-0 right-0 bg-[#6f74f6] hover:bg-[#6f74f6]/80 text-white text-sm px-4 py-1 rounded-r">
                   Send
                 </button>
               </div>
