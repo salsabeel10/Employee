@@ -77,7 +77,7 @@ const Sidebar2 = () => {
     <div className="relative ">
       {/* Menu icon for mobile */}
       <button
-        className="pl-4 pt-2 md:hidden top-4 left-6 z-50 text-blue-600"
+        className="pl-4 pt-2 md:hidden top-4 left-6 z-50 text-[#6F73F6]"
         onClick={() => setIsOpen(!isOpen)}
       >
         <FontAwesomeIcon icon={faBars} size="lg" />
