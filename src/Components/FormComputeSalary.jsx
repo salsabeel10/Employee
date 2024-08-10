@@ -22,7 +22,7 @@ const FormComputeSalary = () => {
               <input
                 type="date"
                 placeholder="20/03/2001"
-                className="w-full placeholder-gray-700 border rounded px-2 py-1"
+                className="w-full text-gray-600 border rounded px-2 py-1"
               />
             </div>
             <button
@@ -46,7 +46,7 @@ const FormComputeSalary = () => {
               <input
                 type="date"
                 placeholder="20/03/2001"
-                className="w-full placeholder-gray-700 border rounded px-2 py-1"
+                className="w-full text-gray-700 border rounded px-2 py-1"
               />
             </div>
           </div>
