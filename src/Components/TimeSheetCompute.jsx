@@ -44,6 +44,20 @@ const TimeSheetCompute = () => {
       '1.5',
       '1.5',
     ],
+    [
+      '01/01/2024',
+      'Sharjah',
+      'AE',
+      'Des',
+      '2024',
+      '1000',
+      'Elec',
+      'BC1',
+      'Design SAAS UI',
+      'IFR',
+      '1.5',
+      '1.5',
+    ],
   ]
   return (
     <div className="overflow-x-auto mb-5">

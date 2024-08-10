@@ -92,7 +92,7 @@ const Sidebar2 = () => {
       >
         <div className="flex-1 flex-col h-screen">
           <div className="border-b">
-            <div className="flex items-center mb-7 pl-3">
+            <div className="flex items-center mb-7 pl-6">
               <img src={Logo1} alt="logo" className="pr-1" />
               <span className="text-xl pl-1 font-sans text-[#595DDB]">
                 ClearTime®

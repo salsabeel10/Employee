@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell, faCog, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faBell, faCog, faHeadset, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = () => {
@@ -22,8 +22,10 @@ const Header = () => {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-10 h-10 btn cursor-pointer text-white rounded-full">
+            <div className="relative flex items-center justify-center w-10 h-10 btn cursor-pointer text-white rounded-full">
               <FontAwesomeIcon icon={faBell} />
+              <span className="absolute top-0 right-0 inline-flex h-3 w-3 rounded-full bg-red-600 animate-ping"></span>
+              <span className="absolute top-0 right-0 inline-flex h-3 w-3 rounded-full bg-[#D2D3F1]"></span>
             </div>
             <div className="flex items-center justify-center w-10 h-10 btn cursor-pointer text-white rounded-full">
               <FontAwesomeIcon icon={faCog} />
@@ -31,7 +33,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
     </div>
   )
 }

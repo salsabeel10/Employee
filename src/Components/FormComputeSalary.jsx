@@ -10,19 +10,19 @@ const FormComputeSalary = () => {
           {/* First Column */}
           <div className="order-1">
             <div className="mb-4">
-              <label className="block text-gray-700">Employee ID</label>
+              <label className="block text-black">Employee ID</label>
               <input
                 type="text"
                 placeholder="Bond"
-                className="w-full border rounded px-2 py-1"
+                className="w-full placeholder-gray-700 border rounded px-2 py-1"
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Start Date</label>
+              <label className="block text-black">Start Date</label>
               <input
                 type="date"
                 placeholder="20/03/2001"
-                className="w-full border rounded px-2 py-1"
+                className="w-full placeholder-gray-700 border rounded px-2 py-1"
               />
             </div>
             <button
@@ -34,25 +34,24 @@ const FormComputeSalary = () => {
           </div>
           <div className="order-2">
             <div className="mb-4">
-              <label className="block text-gray-700">Name</label>
+              <label className="block text-black">Name</label>
               <input
                 type="text"
                 placeholder="Bond"
-                className="w-full border rounded px-2 py-1"
+                className="w-full placeholder-gray-700 border rounded px-2 py-1"
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">End Date</label>
+              <label className="block text-black">End Date</label>
               <input
                 type="date"
                 placeholder="20/03/2001"
-                className="w-full border rounded px-2 py-1"
+                className="w-full placeholder-gray-700 border rounded px-2 py-1"
               />
             </div>
           </div>
         </div>
       </form>
-      
     </div>
   )
 }
