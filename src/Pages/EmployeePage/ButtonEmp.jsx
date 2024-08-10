@@ -17,8 +17,8 @@ const ButtonEmp = () => {
         onClick={GotoEmployee}
         className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
           location.pathname === '/employee'
-            ? 'bg-[#6f74f6] text-white  hover:bg-[#6f74f6]/80'
-            : 'bg-[#e9eefa] text-blue-600 hover:bg-[#e9eefa]/70'
+            ? 'btn'
+            : 'btn-non'
         }`}
       >
         Employee Enrollment
@@ -27,8 +27,8 @@ const ButtonEmp = () => {
         onClick={GotoCompute}
         className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
           location.pathname === '/employee/computeSalary'
-            ? 'bg-[#6f74f6] text-white  hover:bg-[#6f74f6]/80'
-            : 'bg-[#e9eefa] text-blue-600 hover:bg-[#e9eefa]/70'
+            ? 'btn'
+            : 'btn-non'
         }`}
       >
         Compute Salary

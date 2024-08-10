@@ -22,10 +22,10 @@ const Header = () => {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-500 cursor-pointer text-white rounded-full">
+            <div className="flex items-center justify-center w-10 h-10 btn cursor-pointer text-white rounded-full">
               <FontAwesomeIcon icon={faBell} />
             </div>
-            <div className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-500 cursor-pointer text-white rounded-full">
+            <div className="flex items-center justify-center w-10 h-10 btn cursor-pointer text-white rounded-full">
               <FontAwesomeIcon icon={faCog} />
             </div>
           </div>

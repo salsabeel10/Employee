@@ -27,7 +27,7 @@ const FormComputeSalary = () => {
             </div>
             <button
               type="submit"
-              className="mt-2 bg-[#6f74f6] text-white px-4 py-2 rounded hover:bg-[#6f74f6]/80 w-full md:w-auto"
+              className="mt-2 btn px-4 py-2 rounded w-full md:w-auto"
             >
               Generate TimeSheet
             </button>

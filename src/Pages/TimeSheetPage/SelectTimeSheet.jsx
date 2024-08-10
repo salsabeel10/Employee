@@ -54,7 +54,7 @@ const SelectTimeSheet = () => {
       </div>
 
       <div>
-        <button className="bg-blue-500 text-white mt-5 ml-3 px-4 py-2 rounded">
+        <button className="btn mt-5 ml-3 px-4 py-2 rounded">
           View TimeSheet
         </button>
       </div>

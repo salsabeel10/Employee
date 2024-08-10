@@ -14,6 +14,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import Logo from '../assets/Logo.svg'
+import Logo1 from '../assets/Logo1.svg'
 import { useLocation,useNavigate } from 'react-router-dom'
 
 const menuItems = [
@@ -72,27 +73,29 @@ const Sidebar2 = () => {
       </button>
 
       {/* Sidebar */}
-      
+
       <div
         className={`${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } fixed md:relative pt-5 pb-2 top-0 left-0 h-full w-64 bg-[#f9fcfe] text-black p-4 border-r-2 border-blue-200 transition-transform duration-300 ease-in-out z-40 md:translate-x-0 flex flex-col justify-between`}
+        } fixed  px-0 md:relative pt-5 pb-2 top-0 left-0 h-full w-64 bg-[#f9fcfe] text-black p-4 border-r-2 border-blue-200 transition-transform duration-300 ease-in-out z-40 md:translate-x-0 flex flex-col justify-between`}
       >
         <div className="flex-1 flex-col h-screen">
-          <div className="flex items-center mb-7 pl-1">
-            <span className="text-xl font-semibold text-blue-600">
-              ClearTime®
-            </span>
-            <img src={Logo} alt="logo" className="pl-2" />
+          <div className="border-b">
+            <div className="flex items-center mb-7 pl-3">
+              <img src={Logo1} alt="logo" className="pr-1" />
+              <span className="text-xl pl-1 font-sans text-[#595DDB]">
+                ClearTime®
+              </span>
+            </div>
           </div>
 
           <ul className="space-y-4">
             {menuItems.map((item, index) => (
               <li
                 key={index}
-                className={`flex items-center p-2 cursor-pointer ${
+                className={`flex items-center pl-3 p-2 cursor-pointer ${
                   selectedIndex === index
-                    ? 'bg-blue-400 border-l-4 border-blue-700 text-white'
+                    ? 'bg-[#E9EEFA] border-l-4 border-blue-700 text-[#6F73F6]'
                     : 'hover:bg-gray-100'
                 }`}
                 onClick={() => handleClick(index)}
@@ -103,12 +106,12 @@ const Sidebar2 = () => {
             ))}
           </ul>
         </div>
-        <div>
-          <button className="flex items-center bg-blue-100 hover:bg-blue-200 text-blue-600 py-2 px-4 mb-4 w-full rounded justify-center">
+        <div className="px-3">
+          <button className="flex items-center btn-non py-2 px-4 mb-4 w-full rounded justify-center">
             <FontAwesomeIcon icon={faUser} className="mr-2" />
             Aditya Arun
           </button>
-          <button className="flex items-center bg-[#6f74f6] hover:bg-[#6f74f6]/80 text-white py-2 px-4 w-full rounded justify-center">
+          <button className="flex items-center btn py-2 px-4 w-full rounded justify-center">
             <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />
             Logout
           </button>

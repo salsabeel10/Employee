@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        first_btn: '#e9eefa',
+        first_btn: 'bg-[#6f74f6]',
+      },
+      fontFamily: {
+        sans: ['PT Sans', 'sans-serif'],
       },
     },
   },
