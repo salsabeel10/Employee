@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDollarSign, faEye, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign, faEye, faEyeSlash, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 const FormEmpEnroll = () => {
+  const [isPassword, setIsPassword] = useState(true)
+  const togglePasswordVisibility = () => {
+    setIsPassword(!isPassword)
+  }
   return (
     <div className="px-4 mt-1 w-full md:w-[90%]">
       <form className="p-3 border-2 border-blue-300">
@@ -60,8 +64,8 @@ const FormEmpEnroll = () => {
               <label className="block text-gray-700 ">Salary</label>
               <div className="relative w-full">
                 <input
-                  type="text"
-                  placeholder="$99999"
+                  type="number"
+                  placeholder="$9999"
                   className="w-full border rounded px-2 py-1 pr-10"
                 />
                 <FontAwesomeIcon
@@ -118,12 +122,13 @@ const FormEmpEnroll = () => {
               <label className="block text-gray-700">Authorization Code</label>
               <div className="relative">
                 <input
-                  type="text"
+                  type={isPassword ? 'password' : 'text'}
                   placeholder="Enter Code"
                   className="w-full border rounded px-3 py-1 text-gray-700 pr-24 pl-4" // Adjust padding for the button
                 />
                 <FontAwesomeIcon
-                  icon={faEye}
+                  icon={isPassword ? faEyeSlash : faEye}
+                  onClick={togglePasswordVisibility}
                   className="absolute inset-y-0 right-16 pr-2 my-auto text-blue-500 cursor-pointer" // Position icon before button
                 />
                 <button className="absolute inset-y-0 right-0 btn text-sm px-4 py-1 rounded-r">

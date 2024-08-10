@@ -4,7 +4,9 @@ import Sidebar2 from '../../Components/Sidebar2'
 import Header from '../../Components/Header'
 import ButtonEmp from './ButtonEmp'
 
+
 const EmployeeEnrolment = () => {
+  
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
       {/* Sidebar - Hidden on small screens, visible on medium screens and above */}

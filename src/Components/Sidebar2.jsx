@@ -15,26 +15,41 @@ import {
 
 import Logo from '../assets/Logo.svg'
 import Logo1 from '../assets/Logo1.svg'
-import { useLocation,useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const menuItems = [
-  { icon: faUsers, label: 'Employees', path: '/employee' },
-  { icon: faClock, label: 'TimeSheet Entry', path: '/timeSheetEntry' },
-  { icon: faFileInvoice, label: 'Invoice', path: '/invoice' },
+  { icon: 'fa-solid fa-users', label: 'Employees', path: '/employee' },
   {
-    icon: faProjectDiagram,
+    icon: 'fa-regular fa-calendar-clock',
+    label: 'TimeSheet Entry',
+    path: '/timeSheetEntry',
+  },
+  {
+    icon: 'fa-solid fa-file-invoice-dollar',
+    label: 'Invoice',
+    path: '/invoice',
+  },
+  {
+    icon: 'fa-solid fa-diagram-project',
     label: 'Project Initiation',
     path: '/projectInitiation',
   },
   {
-    icon: faCalendarAlt,
+    icon: 'fa-regular fa-calendar-day',
     label: 'Resource Planner',
     path: '/resourcePlanner',
   },
-  { icon: faFileAlt, label: 'Document Control', path: '/documentControl' },
-  { icon: faDollarSign, label: 'Finances', path: '/finances' },
+  {
+    icon: 'fa-solid fa-file-lines',
+    label: 'Document Control',
+    path: '/documentControl',
+  },
+  {
+    icon: 'fa-solid fa-circle-dollar',
+    label: 'Finances',
+    path: '/finances',
+  },
 ]
-
 
 const Sidebar2 = () => {
   const location = useLocation()
@@ -43,25 +58,21 @@ const Sidebar2 = () => {
 
   const [selectedIndex, setSelectedIndex] = useState(null)
 
-   useEffect(() => {
-     const currentPath = location.pathname
-     const currentIndex = menuItems.findIndex((item) =>
-       currentPath.startsWith(item.path)
-     )
-     if (currentIndex !== -1) {
-       setSelectedIndex(currentIndex)
-     }
-   }, [location.pathname])
+  useEffect(() => {
+    const currentPath = location.pathname
+    const currentIndex = menuItems.findIndex((item) =>
+      currentPath.startsWith(item.path)
+    )
+    if (currentIndex !== -1) {
+      setSelectedIndex(currentIndex)
+    }
+  }, [location.pathname])
 
-   const handleClick = (index) => {
-     setSelectedIndex(index)
-     navigate(menuItems[index].path);
-     
-   }
+  const handleClick = (index) => {
+    setSelectedIndex(index)
+    navigate(menuItems[index].path)
+  }
 
-  
-
-  
   return (
     <div className="relative ">
       {/* Menu icon for mobile */}
@@ -100,13 +111,13 @@ const Sidebar2 = () => {
                 }`}
                 onClick={() => handleClick(index)}
               >
-                <FontAwesomeIcon icon={item.icon} className="mr-2" />
+                <i className={`${item.icon} mr-2`}></i>
                 {item.label}
               </li>
             ))}
           </ul>
         </div>
-        <div className="px-3">
+        <div className="pt-4 px-3">
           <button className="flex items-center btn-non py-2 px-4 mb-4 w-full rounded justify-center">
             <FontAwesomeIcon icon={faUser} className="mr-2" />
             Aditya Arun
