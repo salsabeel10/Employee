@@ -15,7 +15,7 @@ import {
 
 import Logo from '../assets/Logo.svg'
 import Logo1 from '../assets/Logo1.svg'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const menuItems = [
   { icon: 'fa-solid fa-users', label: 'Employees', path: '/employee' },
@@ -92,12 +92,14 @@ const Sidebar2 = () => {
       >
         <div className="flex-1 flex-col h-screen">
           <div className="border-b">
-            <div className="flex items-center mb-7 pl-6">
-              <img src={Logo1} alt="logo" className="pr-1" />
-              <span className="text-xl pl-1 font-sans text-[#595DDB]">
-                ClearTime®
-              </span>
-            </div>
+            <Link to='/'>
+              <div className="flex cursor-pointer  items-center mb-7 pl-6">
+                <img src={Logo1} alt="logo" className="pr-1" />
+                <span className="text-xl pl-1 font-sans text-[#595DDB] ">
+                  ClearTime®
+                </span>
+              </div>
+            </Link>
           </div>
 
           <ul className="space-y-4">

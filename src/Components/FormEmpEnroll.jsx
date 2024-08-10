@@ -132,9 +132,9 @@ const FormEmpEnroll = () => {
                 <FontAwesomeIcon
                   icon={isPassword ? faEyeSlash : faEye}
                   onClick={togglePasswordVisibility}
-                  className="absolute inset-y-0 right-16 pr-2 my-auto text-blue-500 cursor-pointer" // Position icon before button
+                  className="absolute inset-y-0 right-16 my-auto text-blue-500 cursor-pointer" // Position icon before button
                 />
-                <button className="absolute inset-y-0 right-0 btn text-sm px-4 py-1 rounded-r">
+                <button className="absolute inset-y-0 right-0 btn text-sm px-3 py-1 rounded-sm">
                   Send
                 </button>
               </div>
