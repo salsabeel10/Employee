@@ -20,7 +20,6 @@ const TimeSheet = () => {
         <div className="mt-10">
           <Support />
         </div>
-        {/* Form takes remaining space */}
       </div>
     </div>
   )
