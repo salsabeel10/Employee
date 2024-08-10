@@ -2,7 +2,7 @@ import React from 'react'
 
 const SelectTimeSheet = () => {
   return (
-    <div className="flex flex-wrap gap-2 items-center px-1 py-2 mb-3">
+    <div className="flex flex-wrap gap-6 items-center px-1 py-2 mb-2">
       <div className="flex-1 min-w-[120px]">
         <label className="block text-black">Employee Id</label>
         <select className="w-full text-gray-700 bg-white border rounded px-1 py-2">
@@ -53,10 +53,8 @@ const SelectTimeSheet = () => {
         </select>
       </div>
 
-      <div>
-        <button className="btn mt-5 ml-3 px-4 py-2 rounded">
-          View TimeSheet
-        </button>
+      <div className="lg:mt-0 ">
+        <button className="btn mt-5 px-4 py-2 rounded">View TimeSheet</button>
       </div>
     </div>
   )
