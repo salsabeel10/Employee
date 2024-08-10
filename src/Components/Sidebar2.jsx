@@ -2,18 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUser,
-  faClock,
-  faFileInvoice,
-  faProjectDiagram,
-  faCalendarAlt,
-  faFileAlt,
-  faDollarSign,
   faSignOutAlt,
-  faUsers,
   faBars,
 } from '@fortawesome/free-solid-svg-icons'
 
-import Logo from '../assets/Logo.svg'
 import Logo1 from '../assets/Logo1.svg'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
@@ -131,7 +123,7 @@ const Sidebar2 = () => {
         </div>
       </div>
 
-      {/* Overlay to close sidebar on mobile */}
+      {/* toggle close sidebar on mobile */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-30 md:hidden"

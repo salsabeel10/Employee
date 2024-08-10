@@ -1,14 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell, faCog, faHeadset, faSearch } from '@fortawesome/free-solid-svg-icons'
-
+import {
+  faBell,
+  faCog,
+  faHeadset,
+  faSearch,
+} from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
-  
   return (
     <div className="container mt-1 w-full md:mt-0 pl-2">
       <div className="flex flex-col  md:flex-row items-center justify-between w-full p-4">
-        {/* Input with trailing icons */}
         <div className="flex items-center w-full space-x-2 mb-4 md:mb-0">
           <div className="relative w-full md:w-[100%]">
             <input

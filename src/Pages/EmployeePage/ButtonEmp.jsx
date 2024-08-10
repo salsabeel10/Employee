@@ -1,6 +1,5 @@
 import React from 'react'
-import { useLocation,useNavigate } from 'react-router-dom'
-
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const ButtonEmp = () => {
   const navigate = useNavigate()
@@ -16,9 +15,7 @@ const ButtonEmp = () => {
       <button
         onClick={GotoEmployee}
         className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
-          location.pathname === '/employee'
-            ? 'btn'
-            : 'btn-non'
+          location.pathname === '/employee' ? 'btn' : 'btn-non'
         }`}
       >
         Employee Enrollment
@@ -26,9 +23,7 @@ const ButtonEmp = () => {
       <button
         onClick={GotoCompute}
         className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
-          location.pathname === '/employee/computeSalary'
-            ? 'btn'
-            : 'btn-non'
+          location.pathname === '/employee/computeSalary' ? 'btn' : 'btn-non'
         }`}
       >
         Compute Salary

@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDollarSign, faEye, faEyeSlash, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import {
+  faDollarSign,
+  faEye,
+  faEyeSlash,
+  faLocationDot,
+} from '@fortawesome/free-solid-svg-icons'
 
 const FormEmpEnroll = () => {
   const [isPassword, setIsPassword] = useState(true)
@@ -15,7 +20,6 @@ const FormEmpEnroll = () => {
           <div className="flex flex-col items-center order-1 lg:order-3">
             <label className="block text-black mb-2">Employee Picture</label>
             <div className="w-[8rem] h-[8rem] md:w-[10rem] md:h-[10rem] mb-4 bg-gray-300 rounded-full flex items-center justify-center">
-              {/* Placeholder for profile image */}
               <span>Profile</span>
             </div>
             <button className="border text-gray-800 hover:bg-blue-100 px-4 py-2 rounded transition w-full md:w-auto">
