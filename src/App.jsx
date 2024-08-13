@@ -13,7 +13,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/employee" replace />} />
-      <Route exact path="/employee" element={<EmployeeEnrolment />} />
+      <Route path="/employee" element={<EmployeeEnrolment />} />
       <Route path="/employee/computeSalary" element={<ComputeSalary />} />
       <Route path="/timeSheetEntry" element={<TimeSheet />} />
       <Route path="/invoice" element={<Invoice />} />
