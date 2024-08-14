@@ -1,10 +1,10 @@
 import React from 'react'
 
-import FormComputeSalary from '../../Components/FormComputeSalary'
-import TimeSheetCompute from '../../Components/TimeSheetCompute'
+import FormComputeSalary from '../../Components/Employee/FormComputeSalary'
+import TimeSheetCompute from '../../Components/TimeSheet/TimeSheetCompute'
 import Sidebar2 from '../../Components/Sidebar2'
 import Header from '../../Components/Header'
-import ButtonEmp from './ButtonEmp'
+import ButtonEmp from '../../Components/Employee/ButtonEmp'
 import Support from '../../Components/Support'
 
 const ComputeSalary = () => {

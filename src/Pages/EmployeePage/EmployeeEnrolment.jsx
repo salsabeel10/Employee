@@ -1,8 +1,8 @@
 import React from 'react'
-import FormEmpEnroll from '../../Components/FormEmpEnroll'
+import FormEmpEnroll from '../../Components/Employee/FormEmpEnroll'
 import Sidebar2 from '../../Components/Sidebar2'
 import Header from '../../Components/Header'
-import ButtonEmp from './ButtonEmp'
+import ButtonEmp from '../../Components/Employee/ButtonEmp'
 
 
 const EmployeeEnrolment = () => {

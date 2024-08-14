@@ -10,7 +10,7 @@ const ProjectInit = () => {
       <div className="flex-1 flex flex-col">
         {/* Header takes full width */}
         <Header className="p-4" />
-        
+    
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 import React from 'react'
 import Sidebar2 from '../../Components/Sidebar2'
-import HeaderTime from './HeaderTime'
-import TimeSheetCompute from '../../Components/TimeSheetCompute'
-import SelectTimeSheet from './SelectTimeSheet'
+import HeaderTime from '../../Components/TimeSheet/HeaderTime'
+import TimeSheetCompute from '../../Components/TimeSheet/TimeSheetCompute'
+import SelectTimeSheet from '../../Components/TimeSheet/SelectTimeSheet'
 import Support from '../../Components/Support'
 
 const TimeSheet = () => {
