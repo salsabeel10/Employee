@@ -11,3 +11,6 @@
 .btn-non{
   @apply bg-[#E9EEFA] text-[#6F73F6];
 }
+.btn-non:hover{
+  @apply bg-[#E9EEFA]/70 text-[#6F73F6];
+}

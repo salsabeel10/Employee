@@ -60,7 +60,7 @@ const FormEmpEnroll = () => {
             </div>
             <div className="mb-4">
               <label className="block text-black">Division</label>
-              <select className="w-full placeholder-gray-700 bg-white border rounded px-1 py-2">
+              <select className="w-full text-gray-700 bg-white border rounded px-1 py-2">
                 <option value="">Select an option</option>
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
