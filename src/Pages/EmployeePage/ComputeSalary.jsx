@@ -20,7 +20,7 @@ const ComputeSalary = () => {
         <div className="w-full h-full px-6 mb-9 md:px-11">
           <TimeSheetCompute />
         </div>
-        <div className="mt-3">
+        <div >
           <Support />
         </div>
       </div>

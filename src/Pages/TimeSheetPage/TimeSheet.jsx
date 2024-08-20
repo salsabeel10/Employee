@@ -4,6 +4,9 @@ import HeaderTime from '../../Components/TimeSheet/HeaderTime'
 import TimeSheetCompute from '../../Components/TimeSheet/TimeSheetCompute'
 import SelectTimeSheet from '../../Components/TimeSheet/SelectTimeSheet'
 import Support from '../../Components/Support'
+import Print from '../../Components/Print'
+
+
 
 const TimeSheet = () => {
   return (
@@ -12,14 +15,16 @@ const TimeSheet = () => {
       <Sidebar2 className="md:w-64" />
       <div className="flex-1 flex flex-col">
         {/* Header takes full width */}
-        <HeaderTime className="p-4" />
-        <div className="pl-6 pr-4 mb-3">
+        <HeaderTime  />
+        <div className="pl-5 pr-4 mb-3">
           <SelectTimeSheet />
           <TimeSheetCompute />
+          <Print />  
         </div>
-        <div className="mt-10">
+        <div>
           <Support />
         </div>
+        
       </div>
     </div>
   )

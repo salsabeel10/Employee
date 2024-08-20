@@ -12,7 +12,7 @@ const EmployeeEnrolment = () => {
       <Sidebar2 className="md:w-64" />
       <div className="flex-1 flex flex-col">
         {/* Header */}
-        <Header className="p-4" />
+        <Header />
         <ButtonEmp />
         {/* Form */}
         <main className="flex-1 p-4">

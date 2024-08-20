@@ -4,8 +4,8 @@ import React from 'react'
 
 const Support = () => {
   return (
-    <div className="relative mt-1">
-      <div className="absolute bottom-1 right-4 bg-[#6F73F6] hover:bg-[#6F73F6]/80 text-white px-3 py-3 rounded-full shadow-lg cursor-pointer">
+    <div>
+      <div className="absolute bottom-3 right-4 bg-[#6F73F6] hover:bg-[#6F73F6]/80 text-white px-3 py-3 rounded-full shadow-lg cursor-pointer">
         <FontAwesomeIcon icon={faHeadset} size="lg" />
       </div>
     </div>

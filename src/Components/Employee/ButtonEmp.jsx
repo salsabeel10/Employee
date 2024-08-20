@@ -11,7 +11,7 @@ const ButtonEmp = () => {
     navigate('/employee/computeSalary')
   }
   return (
-    <div className="flex flex-col py-2 px-6 md:flex-row space-y-2 md:space-y-0 md:space-x-4 pl-6">
+    <div className="flex flex-col py-2 px-6 md:flex-row space-y-2 md:space-y-0 md:space-x-4 pl-4">
       <button
         onClick={GotoEmployee}
         className={`px-2 py-1 text-sm md:px-4 md:py-2 md:text-base rounded ${
