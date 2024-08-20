@@ -8,10 +8,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 const FormProjectInit = () => {
-    const [isPassword, setIsPassword] = useState(true)
-    const togglePasswordVisibility = () => {
-      setIsPassword(!isPassword)
-    }
+  const [isPassword, setIsPassword] = useState(true)
+  const togglePasswordVisibility = () => {
+    setIsPassword(!isPassword)
+  }
   return (
     <div className="pt-1 pl-4 pr-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -34,12 +34,18 @@ const FormProjectInit = () => {
           </div>
           <div className="mb-4">
             <label className="block text-black">Project Value</label>
-            <select className="w-full text-gray-700 bg-white border rounded px-1 py-2">
-              <option value="">Select an option</option>
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </select>
+            <div className="relative">
+              <input
+                type="number"
+                placeholder="7000"
+                className="w-full placeholder-gray-700 border rounded px-2 py-1 pr-12"
+              />
+              <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <span className="font-pt-sans italic font-bold text-[#262626]">
+                  AED
+                </span>
+              </div>
+            </div>
           </div>
           <div className="mb-4">
             <label className="block text-black">Project Manager</label>
