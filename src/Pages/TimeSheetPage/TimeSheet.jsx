@@ -4,7 +4,7 @@ import HeaderTime from '../../Components/TimeSheet/HeaderTime'
 import TimeSheetCompute from '../../Components/TimeSheet/TimeSheetCompute'
 import SelectTimeSheet from '../../Components/TimeSheet/SelectTimeSheet'
 import Support from '../../Components/Support'
-import Print from '../../Components/Print'
+import Print from '../../Components/TimeSheet/Print'
 
 
 

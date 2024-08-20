@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../../Components/Header'
 import Sidebar2 from '../../Components/Sidebar2'
 import FormProjectInit from '../../Components/ProjectInitiation/FormProjectInit'
-import Print from '../../Components/Print'
 import Support from '../../Components/Support'
 
 const ProjectInit = () => {
