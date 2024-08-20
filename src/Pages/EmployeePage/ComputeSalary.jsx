@@ -17,7 +17,7 @@ const ComputeSalary = () => {
         <main className="flex-1 p-4">
           <FormComputeSalary />
         </main>
-        <div className="w-full h-full px-6 mb-9 md:px-11">
+        <div className="w-full h-full px-6  md:px-11">
           <TimeSheetCompute />
         </div>
         <div >

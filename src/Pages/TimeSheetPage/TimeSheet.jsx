@@ -21,10 +21,7 @@ const TimeSheet = () => {
           <TimeSheetCompute />
           <Print />  
         </div>
-        <div>
           <Support />
-        </div>
-        
       </div>
     </div>
   )
